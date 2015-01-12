@@ -1,0 +1,160 @@
+@import "normalize";
+@import "animate";
+@import "tooltips";
+@import "fonts";
+@import "mixins";
+
+/* Main styles */
+html, body{
+	height: 100%;
+}
+
+body{
+	font: 14px "Open Sans";
+	color: #666;
+}
+
+.title{
+
+}
+
+header{
+
+}
+
+main{
+	min-height: 400px;
+}
+
+footer{
+
+}
+
+/* BEM STYLES */
+
+/* col styles */
+.col{
+
+	&__nav{
+
+		&_header{
+
+		}
+
+		&_footer{
+
+		}
+	}
+
+	&__slider{
+
+	}
+
+	&__new-goods{
+
+	}
+
+	&__recommend{
+
+	}
+
+	&__brands{
+
+	}
+
+	&__copy{
+
+	}
+
+	&__social{
+
+		&_icon{
+
+			.yt{
+
+			}
+
+			.vk{
+
+			}
+
+			.fb{
+
+			}
+
+			.tw{
+
+			}
+		}
+	}
+
+	&__info{
+
+		&_tels{
+
+			p{
+
+			}
+		}
+	}
+
+	&__user-office{
+
+		&_link-reg{
+
+		}
+
+		&_link-inp{
+
+		}
+	}
+
+	&__search{
+
+		&_form{
+
+		}
+
+		&_input{
+			
+		}
+
+		&_btn{
+			
+		}
+	}
+
+	&__cart{
+
+		&_link{
+
+		}
+
+		&_goods-info{
+
+		}
+	}
+
+	&__payment{
+
+	}
+
+	&__link_more{
+
+	}
+}
+
+/* carousel styles */
+.carousel{
+
+	&__item{
+
+	}
+
+	&__nav{
+
+		&_next{
+
+		}
+	}
+}
