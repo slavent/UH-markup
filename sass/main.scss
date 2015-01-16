@@ -18,16 +18,24 @@ body{
 
 }
 
-header{
+.wrp{
+	width: 1000px;
+	margin: 0 auto;
+}
 
+header{
+	min-height: 165px;
 }
 
 main{
+	display: block;
 	min-height: 400px;
 }
 
 footer{
-
+	background: #4e5d72;
+	min-height: 325px;
+	color: #fff;
 }
 
 /* BEM STYLES */
@@ -47,7 +55,7 @@ footer{
 	}
 
 	&__slider{
-
+		height: 340px;
 	}
 
 	&__new-goods{
@@ -135,12 +143,34 @@ footer{
 		}
 	}
 
+	&__nav_footer{
+
+		li{
+
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+
 	&__payment{
 
+		li{
+			float: left;
+
+			a{
+				text-decoration: none;
+			}
+		}
 	}
 
 	&__link_more{
+		text-align: right;
 
+		a{
+			color: #21afb9;
+		}
 	}
 }
 
@@ -148,7 +178,12 @@ footer{
 .carousel{
 
 	&__item{
+		display: table-cell;
+		vertical-align: top;
 
+		img{
+			border: 1px solid #9d9d9d;
+		}
 	}
 
 	&__nav{

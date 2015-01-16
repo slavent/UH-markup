@@ -3430,11 +3430,65 @@ body {
   color: #666;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
+.wrp {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 26, ../sass/main.scss */
+header {
+  min-height: 165px;
+}
+
+/* line 30, ../sass/main.scss */
 main {
+  display: block;
   min-height: 400px;
+}
+
+/* line 35, ../sass/main.scss */
+footer {
+  background: #4e5d72;
+  min-height: 325px;
+  color: #fff;
 }
 
 /* BEM STYLES */
 /* col styles */
+/* line 57, ../sass/main.scss */
+.col__slider {
+  height: 340px;
+}
+/* line 150, ../sass/main.scss */
+.col__nav_footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 159, ../sass/main.scss */
+.col__payment li {
+  float: left;
+}
+/* line 162, ../sass/main.scss */
+.col__payment li a {
+  text-decoration: none;
+}
+/* line 168, ../sass/main.scss */
+.col__link_more {
+  text-align: right;
+}
+/* line 171, ../sass/main.scss */
+.col__link_more a {
+  color: #21afb9;
+}
+
 /* carousel styles */
+/* line 180, ../sass/main.scss */
+.carousel__item {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 184, ../sass/main.scss */
+.carousel__item img {
+  border: 1px solid #9d9d9d;
+}
