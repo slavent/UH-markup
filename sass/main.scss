@@ -4,6 +4,9 @@
 @import "fonts";
 @import "mixins";
 
+/* vars */
+$link_color: #21afb9;
+
 /* Main styles */
 html, body{
 	height: 100%;
@@ -25,6 +28,7 @@ body{
 
 header{
 	min-height: 165px;
+	position: relative;
 }
 
 main{
@@ -47,6 +51,19 @@ footer{
 
 		&_header{
 
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			
+			li{
+				float: left;
+				margin: 0 20px 0 0;
+
+				a{
+					color: $link_color;
+				}
+			}
 		}
 
 		&_footer{
@@ -107,13 +124,16 @@ footer{
 	}
 
 	&__user-office{
+		position: absolute;
+		top: 0;
+		right: 0;
 
 		&_link-reg{
-
+			color: $link_color;
 		}
 
 		&_link-inp{
-
+			color: $link_color;
 		}
 	}
 
@@ -169,7 +189,7 @@ footer{
 		text-align: right;
 
 		a{
-			color: #21afb9;
+			color: $link_color;
 		}
 	}
 }
