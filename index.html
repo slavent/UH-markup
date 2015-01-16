@@ -56,7 +56,11 @@
             </header>
 
             <main>
-                <div class="col__slider"></div>
+                <div class="col__slider slav_slider">
+                    <img src="img/slider_1.jpg" alt="" data-desc="Hello, world!">
+                    <img src="img/slider_2.jpg" alt="" data-desc="Hello, Man!">
+                    <img src="img/slider_3.jpg" alt="" data-desc="Hello, Woman!">
+                </div>
 
                 <div class="col__new-goods">
                     <p class="title">Новинки</p>
@@ -162,5 +166,11 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
+        <script src="js/libs/slav_slider.js"></script>
+        <script>
+            $(function(){
+                $(".slav_slider").slav_slider();
+            });
+        </script>
     </body>
 </html>
