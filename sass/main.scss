@@ -6,7 +6,8 @@
 @import "slav_slider";
 
 /* vars */
-$link_color: #21afb9;
+$blue: #21afb9;
+$blue_dark: #484a83;
 
 /* Main styles */
 html, body{
@@ -62,7 +63,7 @@ footer{
 				margin: 0 20px 0 0;
 
 				a{
-					color: $link_color;
+					color: $blue;
 				}
 			}
 		}
@@ -130,11 +131,11 @@ footer{
 		right: 0;
 
 		&_link-reg{
-			color: $link_color;
+			color: $blue;
 		}
 
 		&_link-inp{
-			color: $link_color;
+			color: $blue;
 		}
 	}
 
@@ -190,8 +191,12 @@ footer{
 		text-align: right;
 
 		a{
-			color: $link_color;
+			color: $blue;
 		}
+	}
+
+	&__list{
+
 	}
 }
 
