@@ -3418,38 +3418,130 @@ Copyright (c) 2014 Daniel Eden
   visibility: visible;
 }
 
+/* line 1, ../sass/_slav_slider.scss */
+.slav_slider {
+  width: 9999px;
+}
+/* line 4, ../sass/_slav_slider.scss */
+.slav_slider__wrp {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 10, ../sass/_slav_slider.scss */
+.slav_slider__item {
+  float: left;
+  position: relative;
+}
+/* line 14, ../sass/_slav_slider.scss */
+.slav_slider__item p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #fff;
+  padding: 20px;
+  font: 16px Arial;
+}
+/* line 24, ../sass/_slav_slider.scss */
+.slav_slider__nav {
+  clear: both;
+}
+/* line 27, ../sass/_slav_slider.scss */
+.slav_slider__nav .nav__btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../i/slider_nav.png) no-repeat;
+}
+/* line 33, ../sass/_slav_slider.scss */
+.slav_slider__nav .nav__btn_prev {
+  top: 47%;
+  left: 20px;
+  background-position: 0 0;
+}
+/* line 39, ../sass/_slav_slider.scss */
+.slav_slider__nav .nav__btn_next {
+  top: 45%;
+  right: 20px;
+  background-position: -59px 0;
+}
+/* line 9, ../sass/_mixins.scss */
+.slav_slider__nav .nav__btn:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+/* line 14, ../sass/_mixins.scss */
+.slav_slider__nav .nav__btn:active {
+  opacity: 1;
+}
+/* line 48, ../sass/_slav_slider.scss */
+.slav_slider__nav_dot {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+/* line 53, ../sass/_slav_slider.scss */
+.slav_slider__nav_dot .dot_wrp {
+  text-align: center;
+}
+/* line 57, ../sass/_slav_slider.scss */
+.slav_slider__nav_dot .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 0 10px;
+  opacity: .6;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 9, ../sass/_mixins.scss */
+.slav_slider__nav_dot .dot:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+/* line 14, ../sass/_mixins.scss */
+.slav_slider__nav_dot .dot:active {
+  opacity: 1;
+}
+/* line 67, ../sass/_slav_slider.scss */
+.slav_slider__nav_dot .dot.current {
+  opacity: 1;
+}
+
 /* vars */
 /* Main styles */
-/* line 11, ../sass/main.scss */
+/* line 12, ../sass/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 body {
   font: 14px "Open Sans";
   color: #666;
 }
 
-/* line 24, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .wrp {
   width: 1000px;
   margin: 0 auto;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 header {
   min-height: 165px;
   position: relative;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 main {
   display: block;
   min-height: 400px;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 footer {
   background: #4e5d72;
   min-height: 325px;
@@ -3458,67 +3550,63 @@ footer {
 
 /* BEM STYLES */
 /* col styles */
-/* line 54, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .col__nav_header ul {
   margin: 0;
   padding: 0;
 }
-/* line 59, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .col__nav_header li {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .col__nav_header li a {
   color: #21afb9;
 }
-/* line 74, ../sass/main.scss */
-.col__slider {
-  height: 340px;
-}
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .col__user-office {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .col__user-office_link-reg {
   color: #21afb9;
 }
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .col__user-office_link-inp {
   color: #21afb9;
 }
-/* line 170, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .col__nav_footer li a {
   text-decoration: none;
   color: #fff;
 }
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .col__payment li {
   float: left;
 }
-/* line 182, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .col__payment li a {
   text-decoration: none;
 }
-/* line 188, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .col__link_more {
   text-align: right;
 }
-/* line 191, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .col__link_more a {
   color: #21afb9;
 }
 
 /* carousel styles */
-/* line 200, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 .carousel__item {
   display: table-cell;
   vertical-align: top;
 }
-/* line 204, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .carousel__item img {
   border: 1px solid #9d9d9d;
 }

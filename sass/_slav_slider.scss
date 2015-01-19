@@ -1,0 +1,73 @@
+.slav_slider{
+	width: 9999px;
+
+	&__wrp{
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__item{
+		float: left;
+		position: relative;
+
+		p{
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background: #fff;
+			padding: 20px;
+			font: 16px Arial;
+		}
+	}
+
+	&__nav{
+		clear: both;
+
+		.nav__btn{
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background: url(../i/slider_nav.png) no-repeat;
+
+			&_prev{
+				top: 47%;
+				left: 20px;
+				background-position: 0 0;
+			}
+
+			&_next{
+				top: 45%;
+				right: 20px;
+				background-position: -59px 0;
+			}
+
+			@include hover-active;
+		}
+
+		&_dot{
+			position: absolute;
+			bottom: 20px;
+			width: 100%;
+
+			.dot_wrp{
+				text-align: center;	
+			}
+
+			.dot{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				background: #fff;
+				margin: 0 10px;
+				opacity: .6;
+				@include radius;
+				@include hover-active;
+
+				&.current{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

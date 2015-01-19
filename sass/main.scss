@@ -3,6 +3,7 @@
 @import "tooltips";
 @import "fonts";
 @import "mixins";
+@import "slav_slider";
 
 /* vars */
 $link_color: #21afb9;
@@ -72,7 +73,7 @@ footer{
 	}
 
 	&__slider{
-		height: 340px;
+
 	}
 
 	&__new-goods{
