@@ -5,7 +5,7 @@
 		auto: true,
 		nav: true,
 		nav_dots: true,
-		photo_desc: true
+		photo_desc: false
 	};
 
 	var user_options,

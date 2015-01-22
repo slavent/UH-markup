@@ -15,9 +15,10 @@
 			position: absolute;
 			top: 20px;
 			left: 20px;
-			background: #fff;
-			padding: 20px;
-			font: 16px Arial;
+			background: rgba(255, 255, 255, 0.68);
+			padding: 10px;
+			margin: 0;
+			font: 26px "SegoeUI-Light";
 		}
 	}
 
@@ -26,20 +27,20 @@
 
 		.nav__btn{
 			position: absolute;
-			width: 30px;
-			height: 30px;
+			width: 40px;
+			height: 40px;
 			background: url(../i/slider_nav.png) no-repeat;
 
 			&_prev{
-				top: 47%;
+				top: 160px;
 				left: 20px;
 				background-position: 0 0;
 			}
 
 			&_next{
-				top: 45%;
+				top: 160px;
 				right: 20px;
-				background-position: -59px 0;
+				background-position: -41px 0;
 			}
 
 			@include hover-active;
@@ -47,7 +48,7 @@
 
 		&_dot{
 			position: absolute;
-			bottom: 20px;
+			bottom: 10px;
 			width: 100%;
 
 			.dot_wrp{

@@ -24,7 +24,9 @@ a:hover{
 }
 
 .title{
-
+	font: 30px "SegoeUI-Light";
+	color: $blue_dark;
+	margin: 0 0 12px 0;
 }
 
 .wrp{
@@ -49,12 +51,15 @@ header{
 main{
 	display: block;
 	min-height: 400px;
+	padding: 0 0 70px 0;
 }
 
 footer{
 	background: #4e5d72;
-	min-height: 325px;
+	min-height: 295px;
 	color: #fff;
+	font-size: 14px;
+	padding: 30px 0 0;
 }
 
 /* BEM STYLES */
@@ -86,33 +91,56 @@ footer{
 		}
 
 		&_footer{
+			clear: both;
 
+			ul{
+				margin: 0;
+				padding: 45px 0 0;
+				list-style: none;
+			}
+
+			li{
+				margin: 0 0 5px 0;
+			}
 		}
 	}
 
 	&__slider{
-
+		height: 350px;
+		margin: 0 0 20px 0;
 	}
 
 	&__new-goods{
-
+		clear: both;
 	}
 
 	&__recommend{
-
+		clear: both;
 	}
 
 	&__brands{
-
+		clear: both;
 	}
 
 	&__copy{
-
+		float: left;
+		width: 300px;
 	}
 
 	&__social{
+		width: 300px;
+		float: right;
+
+		ul{
+			list-style: none;
+		}
 
 		&_icon{
+			float: left;
+			margin: 0;
+			width: 30px;
+			height: 30px;
+			background: url(../i/social.jpg) -5px -5px no-repeat;
 
 			.yt{
 
@@ -213,11 +241,12 @@ footer{
 		}
 
 		&_input{
-			width: 625px;
+			width: 605px;
 			height: 30px;
 			background: #fff;
 			border: none;
 			box-shadow: inset -3px 3px 3px #ccc;
+			padding: 0 10px;
 			@include border-radius(7px);
 		}
 
@@ -277,6 +306,11 @@ footer{
 	}
 
 	&__nav_footer{
+		margin: 50px 0 0;
+
+		ul{
+			list-style: none;
+		}
 
 		li{
 
@@ -288,6 +322,11 @@ footer{
 	}
 
 	&__payment{
+		float: right;
+
+		ul{
+			list-style: none;
+		}
 
 		li{
 			float: left;
@@ -313,20 +352,83 @@ footer{
 
 /* carousel styles */
 .carousel{
+	clear: both;
+	width: 1000px;
+	height: 380px;
+	overflow: hidden;
+	position: relative;
+
+	.wrp{
+		width: 9999px;
+		height: 380px;
+		overflow: hidden;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 
 	&__item{
-		display: table-cell;
-		vertical-align: top;
+		float: left;
+		margin: 0 10px 0 0;
+		text-align: center;
+		width: 228px;
 
 		img{
 			border: 1px solid #9d9d9d;
+			margin: 0 0 5px 0;
+		}
+
+		a{
+			color: $blue;
+			font-size: 14px;
+		}
+
+		&:hover{
+			opacity: .8;
+			cursor: pointer;
+
+			a{
+				text-decoration: none;
+			}
 		}
 	}
 
-	&__nav{
+	.nav__btn_next{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50px;
+		height: 328px;
+		background: #fff url(../i/slider_nav.png) -122px center no-repeat;
+		z-index: 15;
 
-		&_next{
-
+		&:hover{
+			cursor: pointer;
 		}
+	}
+}
+
+.carousel.brands{
+	height: 100px;
+		
+	.carousel__item{
+		width: 155px;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100px;
+		float: none;
+		margin: none;
+
+		img{
+			border: none;
+			margin: none;
+		}
+	}
+
+	.nav__btn_next{
+		height: 100px;
 	}
 }
