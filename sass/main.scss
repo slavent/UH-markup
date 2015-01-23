@@ -56,7 +56,7 @@ main{
 
 footer{
 	background: #4e5d72;
-	min-height: 295px;
+	min-height: 250px;
 	color: #fff;
 	font-size: 14px;
 	padding: 30px 0 0;
@@ -128,34 +128,41 @@ footer{
 	}
 
 	&__social{
-		width: 300px;
+		width: 250px;
 		float: right;
+		position: relative;
 
 		ul{
 			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: -5px;
+			right: 0;
+		}
+
+		li{
+			float: left;
 		}
 
 		&_icon{
-			float: left;
-			margin: 0;
+			display: block;
 			width: 30px;
 			height: 30px;
 			background: url(../i/social.jpg) -5px -5px no-repeat;
+			margin: 0 0 0 2px;
+			@include hover-active;
 
-			.yt{
-
+			&.od{
+				background-position: -112px -5px;
 			}
 
-			.vk{
-
+			&.fb{
+				background-position: -41px -5px;
 			}
 
-			.fb{
-
-			}
-
-			.tw{
-
+			&.tw{
+				background-position: -76px -5px;
 			}
 		}
 	}
@@ -402,11 +409,20 @@ footer{
 		right: 0;
 		width: 50px;
 		height: 328px;
-		background: #fff url(../i/slider_nav.png) -122px center no-repeat;
-		z-index: 15;
+		background: #fff;
+		z-index: 5;
+		@include hover-active;
 
-		&:hover{
-			cursor: pointer;
+		&:before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 20;
+			margin-top: -21px;
+			width: 42px;
+			height: 42px;
+			background: url(../i/slider_nav.png) -122px center no-repeat;
 		}
 	}
 }

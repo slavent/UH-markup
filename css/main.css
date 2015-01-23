@@ -3397,29 +3397,29 @@ Copyright (c) 2014 Daniel Eden
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   color: #FFF;
   content: attr(data-tooltip);
-  /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+  /* ╨У╨╗╨░╨▓╨╜╨░╤П ╤З╨░╤Б╤В╤М ╨║╨╛╨┤╨░, ╨╛╨┐╤А╨╡╨┤╨╡╨╗╤П╤О╤Й╨░╤П ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨╡ ╨▓╤Б╨┐╨╗╤Л╨▓╨░╤О╤Й╨╡╨╣ ╨┐╨╛╨┤╤Б╨║╨░╨╖╨║╨╕ */
   margin-top: -24px;
   opacity: 0;
-  /* Наш элемент прозрачен... */
+  /* ╨Э╨░╤И ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨┐╤А╨╛╨╖╤А╨░╤З╨╡╨╜... */
   padding: 3px 7px;
   position: absolute;
   visibility: hidden;
-  /* ...и скрыт. */
+  /* ...╨╕ ╤Б╨║╤А╤Л╤В. */
   transition: all 0.4s ease-in-out;
-  /* Добавить плавности по вкусу */
+  /* ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╨┐╨╗╨░╨▓╨╜╨╛╤Б╤В╨╕ ╨┐╨╛ ╨▓╨║╤Г╤Б╤Г */
 }
 
 /* line 21, ../sass/_tooltips.scss */
 .tooltip:hover::after {
   opacity: 1;
-  /* Показываем его */
+  /* ╨Я╨╛╨║╨░╨╖╤Л╨▓╨░╨╡╨╝ ╨╡╨│╨╛ */
   visibility: visible;
 }
 
 @font-face {
   font-family: 'SegoeUI-Light';
   src: url("../fonts/SegoeUI-Light.eot");
-  src: local("вє"), url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype"), url("../fonts/SegoeUI-Light.svg") format("svg");
+  src: local("╨▓┬Ш╤Ф"), url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype"), url("../fonts/SegoeUI-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3573,7 +3573,7 @@ main {
 /* line 57, ../sass/main.scss */
 footer {
   background: #4e5d72;
-  min-height: 295px;
+  min-height: 250px;
   color: #fff;
   font-size: 14px;
   padding: 30px 0 0;
@@ -3640,52 +3640,83 @@ footer {
 }
 /* line 130, ../sass/main.scss */
 .col__social {
-  width: 300px;
+  width: 250px;
   float: right;
+  position: relative;
 }
-/* line 134, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .col__social ul {
   list-style: none;
-}
-/* line 138, ../sass/main.scss */
-.col__social_icon {
-  float: left;
   margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+/* line 144, ../sass/main.scss */
+.col__social li {
+  float: left;
+}
+/* line 148, ../sass/main.scss */
+.col__social_icon {
+  display: block;
   width: 30px;
   height: 30px;
   background: url(../i/social.jpg) -5px -5px no-repeat;
+  margin: 0 0 0 2px;
 }
-/* line 163, ../sass/main.scss */
+/* line 9, ../sass/_mixins.scss */
+.col__social_icon:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+/* line 14, ../sass/_mixins.scss */
+.col__social_icon:active {
+  opacity: 1;
+}
+/* line 156, ../sass/main.scss */
+.col__social_icon.od {
+  background-position: -112px -5px;
+}
+/* line 160, ../sass/main.scss */
+.col__social_icon.fb {
+  background-position: -41px -5px;
+}
+/* line 164, ../sass/main.scss */
+.col__social_icon.tw {
+  background-position: -76px -5px;
+}
+/* line 170, ../sass/main.scss */
 .col__info {
   position: absolute;
   top: 5px;
   left: 100px;
 }
-/* line 168, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .col__info_tels {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-/* line 172, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 .col__info_tels p {
   font-size: 18px;
   margin: 0;
 }
-/* line 177, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .col__info_tels span {
   font-size: 12px;
 }
-/* line 183, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .col__user-office {
   position: absolute;
   top: 22px;
   right: 0;
 }
-/* line 188, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .col__user-office a {
   color: #21afb9;
 }
-/* line 192, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .col__user-office_link {
   display: table-cell;
   vertical-align: middle;
@@ -3693,11 +3724,11 @@ footer {
   position: relative;
   padding: 0 30px 0 50px;
 }
-/* line 199, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .col__user-office_link:nth-child(2) {
   padding-right: 0;
 }
-/* line 204, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 .col__user-office_link div {
   background: url(../i/user_office_icon.png) 0 0 no-repeat;
   width: 41px;
@@ -3706,15 +3737,15 @@ footer {
   top: 0;
   left: 0;
 }
-/* line 212, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .col__user-office_link div.reg {
   background-position: 0 0;
 }
-/* line 216, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .col__user-office_link div.inp {
   background-position: -41px 0;
 }
-/* line 222, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .col__search {
   position: absolute;
   top: 90px;
@@ -3742,11 +3773,11 @@ footer {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
-/* line 239, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .col__search_form {
   margin: 10px;
 }
-/* line 243, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .col__search_input {
   width: 605px;
   height: 30px;
@@ -3758,7 +3789,7 @@ footer {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
-/* line 253, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .col__search_btn {
   width: 88px;
   height: 31px;
@@ -3795,17 +3826,17 @@ footer {
 .col__search_btn:active {
   opacity: 1;
 }
-/* line 273, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 .col__cart {
   position: absolute;
   top: 95px;
   right: 0;
 }
-/* line 278, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .col__cart a {
   color: #21afb9;
 }
-/* line 282, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 .col__cart .cart {
   background: url(../i/user_office_icon.png) -82px 0 no-repeat;
   width: 41px;
@@ -3814,7 +3845,7 @@ footer {
   top: 0;
   left: 0;
 }
-/* line 291, ../sass/main.scss */
+/* line 298, ../sass/main.scss */
 .col__cart_link {
   display: table-cell;
   vertical-align: middle;
@@ -3823,53 +3854,53 @@ footer {
   position: relative;
   padding: 0 0 0 50px;
 }
-/* line 300, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .col__cart_goods-info {
   font-size: 12px;
   color: #8a8581;
   text-decoration: none;
   margin: 0;
 }
-/* line 308, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .col__nav_footer {
   margin: 50px 0 0;
 }
-/* line 311, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 .col__nav_footer ul {
   list-style: none;
 }
-/* line 317, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .col__nav_footer li a {
   text-decoration: none;
   color: #fff;
 }
-/* line 324, ../sass/main.scss */
+/* line 331, ../sass/main.scss */
 .col__payment {
   float: right;
 }
-/* line 327, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .col__payment ul {
   list-style: none;
 }
-/* line 331, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .col__payment li {
   float: left;
 }
-/* line 334, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 .col__payment li a {
   text-decoration: none;
 }
-/* line 340, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 .col__link_more {
   text-align: right;
 }
-/* line 343, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 .col__link_more a {
   color: #21afb9;
 }
 
 /* carousel styles */
-/* line 354, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 .carousel {
   clear: both;
   width: 1000px;
@@ -3877,64 +3908,81 @@ footer {
   overflow: hidden;
   position: relative;
 }
-/* line 361, ../sass/main.scss */
+/* line 368, ../sass/main.scss */
 .carousel .wrp {
   width: 9999px;
   height: 380px;
   overflow: hidden;
 }
-/* line 367, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .carousel ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 373, ../sass/main.scss */
+/* line 380, ../sass/main.scss */
 .carousel__item {
   float: left;
   margin: 0 10px 0 0;
   text-align: center;
   width: 228px;
 }
-/* line 379, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 .carousel__item img {
   border: 1px solid #9d9d9d;
   margin: 0 0 5px 0;
 }
-/* line 384, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 .carousel__item a {
   color: #21afb9;
   font-size: 14px;
 }
-/* line 389, ../sass/main.scss */
+/* line 396, ../sass/main.scss */
 .carousel__item:hover {
   opacity: .8;
   cursor: pointer;
 }
-/* line 393, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 .carousel__item:hover a {
   text-decoration: none;
 }
-/* line 399, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 .carousel .nav__btn_next {
   position: absolute;
   top: 0;
   right: 0;
   width: 50px;
   height: 328px;
-  background: #fff url(../i/slider_nav.png) -122px center no-repeat;
-  z-index: 15;
+  background: #fff;
+  z-index: 5;
 }
-/* line 408, ../sass/main.scss */
+/* line 9, ../sass/_mixins.scss */
 .carousel .nav__btn_next:hover {
   cursor: pointer;
+  opacity: .8;
+}
+/* line 14, ../sass/_mixins.scss */
+.carousel .nav__btn_next:active {
+  opacity: 1;
+}
+/* line 416, ../sass/main.scss */
+.carousel .nav__btn_next:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 20;
+  margin-top: -21px;
+  width: 42px;
+  height: 42px;
+  background: url(../i/slider_nav.png) -122px center no-repeat;
 }
 
-/* line 414, ../sass/main.scss */
+/* line 430, ../sass/main.scss */
 .carousel.brands {
   height: 100px;
 }
-/* line 417, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 .carousel.brands .carousel__item {
   width: 155px;
   display: table-cell;
@@ -3943,12 +3991,12 @@ footer {
   float: none;
   margin: none;
 }
-/* line 425, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 .carousel.brands .carousel__item img {
   border: none;
   margin: none;
 }
-/* line 431, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .carousel.brands .nav__btn_next {
   height: 100px;
 }
