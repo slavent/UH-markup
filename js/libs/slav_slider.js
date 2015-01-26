@@ -2,16 +2,16 @@
 	
 	var def_options = {
 		speed: 500,
-		auto: true,
-		nav: true,
-		nav_dots: true,
+		auto: false,
+		nav: false,
+		nav_dots: false,
 		photo_desc: false
 	};
 
 	var user_options,
 
-		container = $(".slav_slider"),
-		elems = container.find("img"),
+		container,
+		elems,
 
 		html_wrp = "<div class='slav_slider__wrp'></div>",
 		html_item = "<div class='slav_slider__item'></div>",
@@ -24,17 +24,22 @@
 		classDotWrp = "dot_wrp",
 		classDot = "dot",
 
-		el = {
-			number: elems.length,
-			width: elems.width(),
-			height: container.height(),
-			index: 0
-		};
+		el;
 
 	$.fn.slav_slider = 	function(params){
 
 		var options = $.extend({}, def_options, user_options, params),
 			container_wrp;
+
+		var container = $(this),
+			elems = container.children(),
+
+			el = {
+				number: elems.length,
+				width: elems.width(),
+				height: container.height(),
+				index: 0
+			};
 
 		var init = function(){
 
@@ -46,6 +51,8 @@
 			var makeItemList = function(){
 				container.wrap(html_wrp);
 				container_wrp = container.parent();
+
+				container_wrp.css({"height": el.height});
 
 				elems.each(function(){
 					$(this).wrap(html_item);

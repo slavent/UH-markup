@@ -114,12 +114,14 @@ footer{
 
 			li{
 				margin: 0 0 5px 0;
+				list-style: none;
 			}
 		}
 	}
 
 	&__slider{
-		height: 350px;
+		width: 9999px;
+		height: 343px;
 		margin: 0 0 20px 0;
 	}
 
