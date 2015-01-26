@@ -7,7 +7,7 @@
 
 /* vars */
 $blue: #21afb9;
-$blue_dark: #484a83;
+$blue_dark: #4f5d73;
 
 /* Main styles */
 html, body{
@@ -23,10 +23,21 @@ a:hover{
 	text-decoration: none;
 }
 
+.clearfix{
+	display: table;
+	clear: both;
+	content: "";
+}
+
 .title{
 	font: 30px "SegoeUI-Light";
 	color: $blue_dark;
 	margin: 0 0 12px 0;
+
+	&.main{
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 .wrp{
@@ -52,6 +63,7 @@ main{
 	display: block;
 	min-height: 400px;
 	padding: 0 0 70px 0;
+	position: relative;
 }
 
 footer{
@@ -60,6 +72,7 @@ footer{
 	color: #fff;
 	font-size: 14px;
 	padding: 30px 0 0;
+	clear: both;
 }
 
 /* BEM STYLES */
@@ -352,8 +365,60 @@ footer{
 		}
 	}
 
-	&__list{
+	&__list_good{
 
+		.item{
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			margin: 0 40px 30px 0;
+			position: relative;
+			font-family: "Open Sans";
+
+			&:nth-child(4n+4){
+				margin-right: 0;
+			}
+
+			img{
+				padding: 0 0 20px 0;
+				border-bottom: 1px solid #77716c;
+			}
+
+			p{
+				margin: 10px 0 0;
+				text-align: center;
+				font: 14px "Open Sans";
+				text-decoration: underline;
+				color: $blue_dark;
+			}
+
+			.price{
+				color: #77716c;
+				text-align: right;
+				margin: 10px;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			a:hover{
+				opacity: .8;
+
+				p{
+					text-decoration: none;
+				}
+			}
+
+			.discount{
+				position: absolute;
+				top: 15px;
+				left: 0;
+				color: #fff;
+				background: $blue_dark;
+				padding: 5px 10px;
+			}
+		}
 	}
 }
 
@@ -446,5 +511,75 @@ footer{
 
 	.nav__btn_next{
 		height: 100px;
+	}
+}
+
+.bread{
+	margin: 0 0 20px 10px;
+
+	a{
+		color: $blue;
+		font: 12px "Open Sans";
+	}
+
+	span{
+		padding: 0 2px 0 7px;
+		color: $blue;
+		font: 12px "Open Sans";
+	}
+}
+
+.sortBy{
+	position: absolute;
+	right: 0;
+	top: 40px;
+	font: 14px "Open Sans";
+
+	ul{
+		list-style: none;
+	}
+
+	a{
+		color: #fff;
+		text-decoration: none;
+		padding: 3px 7px;
+		background: #00a2ad;
+		@include hover-active;
+	}
+
+	li{
+		float: left;
+		margin: 0 0 0 10px;
+
+		&:nth-child(1){
+			margin-right: 10px;
+		}
+	}
+}
+
+.pagination{
+	
+	ul{
+		float: right;
+	}
+
+	li{
+		float: left;
+		margin: 0 0 0 7px;
+		list-style: none;
+		font: 14px "Open Sans";
+
+		&:nth-child(1){
+			margin-right: 10px;
+		}
+	}
+
+	a{
+		color: #fff;
+		padding: 1px 7px;
+		background: #00a2ad; 
+		text-decoration: none;
+		font: 14px "Open Sans";
+		@include hover-active;
 	}
 }
