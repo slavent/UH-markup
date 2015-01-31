@@ -15,7 +15,7 @@ html, body{
 }
 
 body{
-	font: 14px 'SegoeUI-Light', Arial;
+	font: 16px 'SegoeUI-Light', Arial;
 	color: #666;
 }
 
@@ -32,7 +32,7 @@ a:hover{
 .title{
 	font: 30px "SegoeUI-Light";
 	color: $blue_dark;
-	margin: 40px 0 12px 0;
+	margin: 20px 0 12px 0;
 
 	&.main{
 		margin-left: 20px;
@@ -48,7 +48,7 @@ a:hover{
 
 .logo{
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	left: 10px;
 	background: url(../i/logo.png) no-repeat;
 	width: 48px;
@@ -99,7 +99,7 @@ footer{
 
 				a{
 					color: $blue;
-					font-size: 14px;
+					font-size: 16px;
 				}
 			}
 		}
@@ -127,14 +127,17 @@ footer{
 	}
 
 	&__new-goods{
+		position: relative;
 		clear: both;
 	}
 
 	&__recommend{
+		position: relative;
 		clear: both;
 	}
 
 	&__brands{
+		position: relative;
 		clear: both;
 	}
 
@@ -207,6 +210,7 @@ footer{
 		position: absolute;
 		top: 22px;
 		right: 0;
+		font-size: 14px;
 
 		a{
 			color: $blue;
@@ -328,6 +332,97 @@ footer{
 		}
 	}
 
+	&__cart-list{
+		
+		table{
+			border: none;
+			width: 100%;
+
+			tr{
+				border: 1px solid $blue_dark;
+
+				td.head{
+					background: $blue_dark;
+					color: #fff;
+					padding: 20px;
+				}
+
+				td{
+					color: $blue_dark;
+					font-size: 16px;
+
+					a{
+						color: $blue_dark;
+					}
+
+					p{
+						color: #999999;
+						font-size: 14px;
+						margin: 0;
+					}
+
+					img{
+						margin: 15px;
+						border: 1px solid #999;
+
+						&:hover{
+							opacity: .8;
+							cursor: pointer;
+						}
+					}
+
+					.min, .max{
+						color: #fff;
+						background: $blue;
+						padding: 0 5px;
+
+						&:hover{
+							opacity: .8;
+							cursor: pointer;
+						}
+					}
+
+					.val{
+						padding: 0 5px;
+					}
+				}
+			}
+		}
+	}
+
+	&__summ{
+		border: 1px solid $blue_dark;
+		border-top: none;
+
+		.summ{
+			color: $blue_dark;
+			font-size: 30px;
+			text-align: right;
+			padding: 20px;
+		}
+
+		button{
+			width: 185px;
+			height: 50px;
+			background: $blue_dark;
+			border: none;
+			color: #fff;
+			font-size: 14px;
+
+			&.restart{
+				margin: 0 20px 0 0;
+			}
+
+			&.go{
+				float: right;
+			}
+
+			&:hover{
+				opacity: .8;
+			}
+		}
+	}
+
 	&__nav_footer{
 		margin: 50px 0 0;
 
@@ -362,6 +457,9 @@ footer{
 
 	&__link_more{
 		text-align: right;
+		position: absolute;
+		top: 15px;
+		right: 0;
 
 		a{
 			color: $blue;
@@ -423,6 +521,76 @@ footer{
 			}
 		}
 	}
+
+	&__gallery_good{
+		width: 450px;
+		float: left;
+
+		.big_photo{
+
+			img{
+				border: 1px solid #999;
+			}
+		}
+
+		.prev_photo img{
+			border: 1px solid #999;
+			margin: 10px 10px 0 0;
+		}
+	}
+
+	&__desc{
+		float: right;
+		width: 530px;
+		/*font-family: "Open Sans";*/
+
+		.price, .articul, .size, .desc{
+			font-size: 18px;
+			color: $blue_dark;
+			margin: 0 0 20px 0;
+		}
+
+		.size span{
+			color: #fff;
+			background: $blue;
+			padding: 0 5px;
+
+			&:hover{
+				opacity: .8;
+				cursor: pointer;
+			}
+		}
+
+		span{
+			color: #999592;
+		}
+
+		.desc div{
+			color: #999592;
+		}
+	}
+
+	&__list{
+		clear: both;	
+		padding: 20px 0 0;
+
+		.item{
+			margin-right: 32px;
+
+			&:nth-child(4){
+				margin-right: 0;
+			}
+
+			&:hover{
+				opacity: .8;
+				cursor: pointer;
+
+				p{
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
 /* carousel styles */
@@ -458,7 +626,7 @@ footer{
 		}
 
 		a{
-			color: $blue;
+			color: $blue_dark;
 			font-size: 14px;
 		}
 
@@ -468,6 +636,10 @@ footer{
 
 		&:hover{
 			opacity: .8;
+
+			a{
+				text-decoration: none;
+			}
 		}
 	}
 

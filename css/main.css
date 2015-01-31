@@ -3380,7 +3380,7 @@ html, body {
 }
 
 body {
-  font: 14px 'SegoeUI-Light', Arial;
+  font: 16px 'SegoeUI-Light', Arial;
   color: #666;
 }
 
@@ -3397,7 +3397,7 @@ a:hover {
 .title {
   font: 30px "SegoeUI-Light";
   color: #4f5d73;
-  margin: 40px 0 12px 0;
+  margin: 20px 0 12px 0;
 }
 .title.main {
   margin-left: 20px;
@@ -3412,7 +3412,7 @@ a:hover {
 
 .logo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 10px;
   background: url(../i/logo.png) no-repeat;
   width: 48px;
@@ -3457,7 +3457,7 @@ footer {
 }
 .col__nav_header li a {
   color: #21afb9;
-  font-size: 14px;
+  font-size: 16px;
 }
 .col__nav_footer {
   clear: both;
@@ -3477,12 +3477,15 @@ footer {
   margin: 0 0 20px 0;
 }
 .col__new-goods {
+  position: relative;
   clear: both;
 }
 .col__recommend {
+  position: relative;
   clear: both;
 }
 .col__brands {
+  position: relative;
   clear: both;
 }
 .col__copy {
@@ -3548,6 +3551,7 @@ footer {
   position: absolute;
   top: 22px;
   right: 0;
+  font-size: 14px;
 }
 .col__user-office a {
   color: #21afb9;
@@ -3681,6 +3685,77 @@ footer {
   text-decoration: none;
   margin: 0;
 }
+.col__cart-list table {
+  border: none;
+  width: 100%;
+}
+.col__cart-list table tr {
+  border: 1px solid #4f5d73;
+}
+.col__cart-list table tr td.head {
+  background: #4f5d73;
+  color: #fff;
+  padding: 20px;
+}
+.col__cart-list table tr td {
+  color: #4f5d73;
+  font-size: 16px;
+}
+.col__cart-list table tr td a {
+  color: #4f5d73;
+}
+.col__cart-list table tr td p {
+  color: #999999;
+  font-size: 14px;
+  margin: 0;
+}
+.col__cart-list table tr td img {
+  margin: 15px;
+  border: 1px solid #999;
+}
+.col__cart-list table tr td img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.col__cart-list table tr td .min, .col__cart-list table tr td .max {
+  color: #fff;
+  background: #21afb9;
+  padding: 0 5px;
+}
+.col__cart-list table tr td .min:hover, .col__cart-list table tr td .max:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.col__cart-list table tr td .val {
+  padding: 0 5px;
+}
+.col__summ {
+  border: 1px solid #4f5d73;
+  border-top: none;
+}
+.col__summ .summ {
+  color: #4f5d73;
+  font-size: 30px;
+  text-align: right;
+  padding: 20px;
+}
+.col__summ button {
+  width: 185px;
+  height: 50px;
+  background: #4f5d73;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+.col__summ button.restart {
+  margin: 0 20px 0 0;
+}
+.col__summ button.go {
+  float: right;
+}
+.col__summ button:hover {
+  opacity: .8;
+}
 .col__nav_footer {
   margin: 50px 0 0;
 }
@@ -3705,6 +3780,9 @@ footer {
 }
 .col__link_more {
   text-align: right;
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
 .col__link_more a {
   color: #21afb9;
@@ -3753,6 +3831,59 @@ footer {
   background: #4f5d73;
   padding: 5px 10px;
 }
+.col__gallery_good {
+  width: 450px;
+  float: left;
+}
+.col__gallery_good .big_photo img {
+  border: 1px solid #999;
+}
+.col__gallery_good .prev_photo img {
+  border: 1px solid #999;
+  margin: 10px 10px 0 0;
+}
+.col__desc {
+  float: right;
+  width: 530px;
+  /*font-family: "Open Sans";*/
+}
+.col__desc .price, .col__desc .articul, .col__desc .size, .col__desc .desc {
+  font-size: 18px;
+  color: #4f5d73;
+  margin: 0 0 20px 0;
+}
+.col__desc .size span {
+  color: #fff;
+  background: #21afb9;
+  padding: 0 5px;
+}
+.col__desc .size span:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.col__desc span {
+  color: #999592;
+}
+.col__desc .desc div {
+  color: #999592;
+}
+.col__list {
+  clear: both;
+  padding: 20px 0 0;
+}
+.col__list .item {
+  margin-right: 32px;
+}
+.col__list .item:nth-child(4) {
+  margin-right: 0;
+}
+.col__list .item:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.col__list .item:hover p {
+  text-decoration: none;
+}
 
 /* carousel styles */
 .carousel {
@@ -3784,7 +3915,7 @@ footer {
   margin: 0 0 5px 0;
 }
 .carousel__item a {
-  color: #21afb9;
+  color: #4f5d73;
   font-size: 14px;
 }
 .carousel__item p {
@@ -3792,6 +3923,9 @@ footer {
 }
 .carousel__item:hover {
   opacity: .8;
+}
+.carousel__item:hover a {
+  text-decoration: none;
 }
 .carousel .nav__btn_next {
   position: absolute;
