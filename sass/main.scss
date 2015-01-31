@@ -121,7 +121,6 @@ footer{
 	}
 
 	&__slider{
-		width: 9999px;
 		height: 343px;
 		margin: 0 0 20px 0;
 	}
@@ -138,6 +137,8 @@ footer{
 
 	&__brands{
 		position: relative;
+		overflow: hidden;
+		width: 1000px;
 		clear: both;
 	}
 
@@ -591,6 +592,57 @@ footer{
 			}
 		}
 	}
+
+	&__hover{
+		display: none;
+		background: $blue_dark;
+		color: #fff;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		z-index: 200;
+		width: 590px;
+		@include box-shadow;
+
+		.box{
+			float: left;
+			width: 220px;
+			margin: 20px;
+		}
+
+		span{
+			padding: 0 0 0 5px;
+			color: $blue;
+		}
+
+		ul{
+			margin: 0;
+			padding: 0 0 20px 10px;
+		}
+
+		li{
+			list-style: none;
+			float: none;
+			margin: 0 0 3px 0;
+
+			a{
+				color: #fff;
+				font-size: 16px;
+				text-decoration: none;
+
+				&:hover{
+					opacity: .8;
+				}
+			}
+		}
+
+		.header{
+			color: #fff;
+			font-size: 18px;
+			font-weight: 700;
+			margin: 0 0 5px 0;
+		}
+	}
 }
 
 /* carousel styles */
@@ -604,7 +656,6 @@ footer{
 	.wrp{
 		width: 9999px;
 		height: 380px;
-		/*overflow: hidden;*/
 	}
 
 	ul{
