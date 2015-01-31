@@ -32,11 +32,12 @@ a:hover{
 .title{
 	font: 30px "SegoeUI-Light";
 	color: $blue_dark;
-	margin: 0 0 12px 0;
+	margin: 40px 0 12px 0;
 
 	&.main{
 		margin-left: 20px;
 		margin-bottom: 20px;
+		margin-top: 0;
 	}
 }
 
@@ -435,7 +436,7 @@ footer{
 	.wrp{
 		width: 9999px;
 		height: 380px;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 
 	ul{
@@ -449,6 +450,7 @@ footer{
 		margin: 0 10px 0 0;
 		text-align: center;
 		width: 228px;
+		position: relative;
 
 		img{
 			border: 1px solid #9d9d9d;
@@ -460,13 +462,12 @@ footer{
 			font-size: 14px;
 		}
 
+		p{
+			margin: 0;
+		}
+
 		&:hover{
 			opacity: .8;
-			cursor: pointer;
-
-			a{
-				text-decoration: none;
-			}
 		}
 	}
 
@@ -478,7 +479,7 @@ footer{
 		height: 328px;
 		background: #fff;
 		z-index: 5;
-		@include hover-active;
+		/*@include hover-active;*/
 
 		&:before{
 			content: "";

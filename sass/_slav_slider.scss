@@ -5,11 +5,16 @@
 		width: 100%;
 		overflow: hidden;
 		position: relative;
+		margin: 0 0 60px 0;
 	}
 
 	&__item{
 		float: left;
 		position: relative;
+
+		img{
+			width: 1000px;
+		}
 
 		p{
 			position: absolute;
